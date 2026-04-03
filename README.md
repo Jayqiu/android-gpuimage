@@ -26,6 +26,7 @@ Add CLAUDE.md for development guidance
 ```groovy
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
