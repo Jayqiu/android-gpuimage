@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as int
@@ -29,4 +30,30 @@ android {
     }
 
     namespace 'jp.co.cyberagent.android.gpuimage'
+}
+
+ext {
+    pomName = 'gpuimage'
+    pomArtifactId = 'gpuimage'
+    pomGroupId = 'jp.co.cyberagent.android'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = pomGroupId
+                artifactId = pomArtifactId
+                version = VERSION_NAME
+
+                artifact(tasks.getByName("bundleReleaseAar"))
+
+                pom {
+                    name = pomName
+                    description = 'Image filters for Android with OpenGL (based on GPUImage for iOS)'
+                    url = 'https://github.com/Jayqiu/android-gpuimage'
+                }
+            }
+        }
+    }
 }
