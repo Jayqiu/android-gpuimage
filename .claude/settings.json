@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew :library:assembleRelease --no-daemon)",
+      "Bash(./gradlew :library:publishReleasePublicationToSonatypeRepository --no-daemon)",
+      "Bash(./gradlew :library:tasks --group=publishing --no-daemon)"
+    ]
+  }
+}

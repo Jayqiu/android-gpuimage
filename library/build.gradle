@@ -30,23 +30,3 @@ android {
 
     namespace 'jp.co.cyberagent.android.gpuimage'
 }
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'gpuimage'
-    bintrayUserOrg = 'cats-oss'
-    publishedGroupId = 'jp.co.cyberagent.android'
-    libraryName = 'gpuimage'
-    artifact = 'gpuimage'
-    libraryDescription = 'Image filters for Android with OpenGL (based on GPUImage for iOS)'
-    siteUrl = 'https://github.com/Jayqiu/android-gpuimage'
-    gitUrl = 'https://github.com/Jayqiu/android-gpuimage.git'
-    issueUrl = 'https://github.com/Jayqiu/android-gpuimage/issues'
-    libraryVersion = VERSION_NAME
-    developerId = 'cats'
-    developerName = 'CATS'
-    developerEmail = 'dadadada.chop@gmail.com'
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
