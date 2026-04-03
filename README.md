@@ -1,12 +1,20 @@
 # GPUImage for Android
-[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Download](https://api.bintray.com/packages/cats-oss/maven/gpuimage/images/download.svg) ](https://bintray.com/cats-oss/maven/gpuimage/_latestVersion)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/jp.co.cyberagent.android/gpuimage/badge.svg)](https://search.maven.org/artifact/jp.co.cyberagent.android/gpuimage)
-[![Build Status](https://app.bitrise.io/app/d8d8090a71066e7c/status.svg?token=sJNbvX8CkecWcUA5Z898lQ&branch=master)](https://app.bitrise.io/app/d8d8090a71066e7c)
+[![](https://jitpack.io/v/Jayqiu/android-gpuimage.svg)](https://jitpack.io/#Jayqiu/android-gpuimage)
 
 Idea from: [iOS GPUImage framework](https://github.com/BradLarson/GPUImage2)
 
 Goal is to have something as similar to GPUImage as possible. Vertex and fragment shaders are exactly the same. That way it makes it easier to port filters from GPUImage iOS to Android.
+
+Update for Gradle 8.5 compatibility and modernize dependencies
+
+Upgrade AGP to 8.1.0, Kotlin to 1.9.0, Gradle to 8.5
+Update SDK versions to 34
+Add namespace for Android 31+ compatibility
+Fix deprecated options (jcenter, enableBuildCache)
+Add android:exported for MainActivity
+Add 16KB page alignment in CMakeLists
+Fix CMake linking (android, log, GLESv2, jnigraphics)
+Add CLAUDE.md for development guidance
 
 ## Requirements
 * Android 2.2 or higher (OpenGL ES 2.0)
@@ -21,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'jp.co.cyberagent.android:gpuimage:2.x.x'
+    implementation 'com.github.Jayqiu:android-gpuimage: 2.x.x'
 }
 ```
 
