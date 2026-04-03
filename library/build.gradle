@@ -39,9 +39,9 @@ ext {
     libraryName = 'gpuimage'
     artifact = 'gpuimage'
     libraryDescription = 'Image filters for Android with OpenGL (based on GPUImage for iOS)'
-    siteUrl = 'https://github.com/cats-oss/android-gpuimage'
-    gitUrl = 'https://github.com/cats-oss/android-gpuimage.git'
-    issueUrl = 'https://github.com/cats-oss/android-gpuimage/issues'
+    siteUrl = 'https://github.com/Jayqiu/android-gpuimage'
+    gitUrl = 'https://github.com/Jayqiu/android-gpuimage.git'
+    issueUrl = 'https://github.com/Jayqiu/android-gpuimage/issues'
     libraryVersion = VERSION_NAME
     developerId = 'cats'
     developerName = 'CATS'
